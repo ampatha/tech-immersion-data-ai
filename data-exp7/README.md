@@ -53,17 +53,17 @@ In this experience, you will use advanced features of the managed PostgreSQL Paa
 
 ## Task 1: Connect to PostgreSQL
 
-1. Open the [Azure portal](https://portal.azure.com) and navigate to the resource group you created (`hands-on-lab-SUFFIX` where SUFFIX is your unique identifier).
+1. Open the [Azure portal](https://portal.azure.com) and navigate to the resource group on your lab environment created (`tech-immersion-SUFFIX` where SUFFIX is your unique identifier).
 
 2. Find your PostgreSQL server group and select it. (The server group name will not have a suffix. Items with names ending in, for example, "-c", "-w0", or "-w1" are not the server group.)
 
    ![The PostgreSQL server group is highlighted in the resource group.](media/resource-group-pg-server-group.png 'Resource group')
 
-3. On the Overview blade, locate and copy the **Coordinator name** and **Admin username** values. Store these values in Notebook or similar text editor for later.
+3. On the Overview blade, locate and copy the **Coordinator name** and **Admin username** values. Store these values in Notebook or similar text editor for later. These values are available as well on your lab login page.
 
    ![The Coordinator name copy button and Admin username value are both highlighted.](media/postgres-coordinator-name.png 'Overview blade')
 
-4. Select **Firewall** in the left-hand menu underneath Security. In the Firewall rules blade, select **+ Add firewall rule for current client IP address (xxx.xxx.xxx.xxx)** to add your IP to the server group's firewall.
+4. Select **Networking** in the left-hand menu underneath Security. In the Networking rules blade, select **+ Add current client IP address (xxx.xxx.xxx.xxx)** to add your IP to the server group's firewall.
 
    ![The Firewall rules blade is displayed.](media/postgres-firewall.png 'Firewall rules')
 
